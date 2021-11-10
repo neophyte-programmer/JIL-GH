@@ -9,9 +9,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ============== NAVIGATION ============= */
 header {
-    z-index: 1000;
+    z-index: 999;
     position: absolute;
     top: 0;
     left: 0;    
@@ -24,10 +28,9 @@ header {
 }
 
 header .brand {
-    color: #000;
+    color: #fff;
     font-size: 1.5em;
     font-weight: 700;
-    text-decoration: none;
 }
 
 header .navigation {
@@ -36,10 +39,9 @@ header .navigation {
 
 header .navigation .navigation-items a{
     position: relative;
-    color: #000;
+    color: #fff;
     font-size: 1em;
     font-weight: 500;
-    text-decoration: none;
     margin-left: 30px;
     transition: 0.3s ease;
 }
@@ -47,7 +49,7 @@ header .navigation .navigation-items a{
 header .navigation .navigation-items a::before {
     content: '';
     position: absolute;
-    background: #000;
+    background: #fff;
     width: 0;
     height: 3px;
     bottom: 0;
@@ -59,3 +61,75 @@ header .navigation .navigation-items a:hover::before {
     width: 100%;
 }
 
+/* ============== HOME ============= */
+section {
+    padding: 100px 200px;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #2696e9;
+
+}
+
+.home .content {
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.home .content h1 {
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.home .content p {
+    margin-bottom: 65px;
+}
+
+.home .content a {
+    background: #fff;
+    padding: 15px 35px;
+    color: #3398FF;
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.home .media-icons{
+        z-index: 888;
+        position: absolute;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s ease;
+}
+
+.home .media-icons a {
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+
+.home .media-icons a:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.home .media-icons a:hover {
+    transform: scale(1.4);
+}
