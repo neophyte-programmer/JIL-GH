@@ -209,7 +209,7 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 22px;
+    font-size: 1.8em;
   }
 
   .container .contact-info .box .text {
@@ -284,4 +284,27 @@ header{
     cursor: pointer;
     padding: 10px;
     font-size: 1em;
+  }
+
+  /* =============== MEDIA QUERIES ================ */
+  @media (max-width: 991px) {
+    .contact {
+      
+      padding: 50px;
+    }
+
+    .container {
+      flex-direction: column;
+    }
+
+    .contact .content {
+      margin-top: 50px;
+    }
+
+    .container .contact-info,
+    .container .contact-form {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+
   }
