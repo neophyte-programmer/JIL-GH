@@ -8,11 +8,23 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* =============== TEMPORARY ================ */
 body {
-    background: #000;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #1d1d61 0%, #0380c9 74%);
+    color: #000;
 }
 
 /* =============== NAVIGATION SECTION ================ */
@@ -28,6 +40,7 @@ header{
     align-items: center;
     padding: 15px 200px;
     transition: 0.5s ease;
+    background-color: #000;
   }
   
   header .brand{
@@ -134,3 +147,84 @@ header{
     
   }
   
+   /* =============== TEAM SECTION ================ */
+section {
+  padding: 100px 0;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 35px;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.heading::after {
+  content: "";
+  width: 100px;
+  height: 8px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 320px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.card .card-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 1% 88%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -110px;
+  z-index: 777;
+  border: 10px solid #fff;
+}
+
+.card h1 {
+  font-size: 25px;
+  color: #333;
+  margin: 15px 0;
+}
+
+.role-title {
+  color: #777;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.about {
+  font-size: 15px;
+}
