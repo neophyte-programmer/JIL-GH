@@ -29,6 +29,7 @@ Live Site URL: [Live Site](https://jilgh.netlify.app/)
 
 ## More Resources 
 - Videos: [RoyaltyFreeFootages](https://www.youtube.com/channel/UCxr_NZPzIYfvRAxhYMA0HXQ)
+- Pictures: [Pexels](https://www.pexels.com/)
 - Fonts: [GoogleFonts](https://fonts.google.com/)
 - Clip Art: [Clippy](https://bennettfeely.com/clippy/)
 - Colors: [ColorPicker](https://htmlcolorcodes.com/color-picker/)
