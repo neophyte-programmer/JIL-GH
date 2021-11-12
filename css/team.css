@@ -22,8 +22,7 @@ a {
 
 /* =============== TEMPORARY ================ */
 body {
-  background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #1d1d61 0%, #0380c9 74%);
+    background-color: #eee;
     color: #000;
 }
 
@@ -40,7 +39,7 @@ header{
     align-items: center;
     padding: 15px 200px;
     transition: 0.5s ease;
-    background-color: #000;
+    background-color: rgba(1, 1, 1, 0.5);
   }
   
   header .brand{
@@ -148,3 +147,51 @@ header{
   }
   
    /* =============== TEAM SECTION ================ */
+.title {
+  text-align: center;
+  text-transform: capitalize;
+  color: #4746DF;
+  margin: 10px 0;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 2px;
+  background-image: linear-gradient(to left, transparent 5%, #4746DF);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.team-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.member {
+  flex: 1 1 250px;
+  margin: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  cursor: pointer;
+  max-width: 300px;
+}
+
+.member:hover {
+  box-shadow: 0 10px 20px rgba(1, 1, 1, 0.1);
+}
+
+.member img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #4746DF;
+  border-radius: 50%;
+  margin: 0 auto;
+}
