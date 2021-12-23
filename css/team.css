@@ -261,7 +261,7 @@ header .navigation .navigation-items a:hover:before{
   flex-shrink: 0;
   height: 300px;
   background-image: linear-gradient(147deg, #6868f1 0%, #00008a 74%);
-  box-shadow: 4px 13px 30px 1px rgba(52, 51, 255,  0.2);
+  /* box-shadow: 4px 13px 30px 1px rgba(52, 51, 255,  0.1); */
   border-radius: 20px;
   transform: translateX(-80px);
   overflow: hidden;
@@ -403,7 +403,6 @@ header .navigation .navigation-items a:hover:before{
   opacity: 1;
   background: #00008a;
   height: 30px;
-  box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
 }
 
 @media screen and (max-width: 768px) {
