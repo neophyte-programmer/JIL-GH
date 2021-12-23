@@ -28,6 +28,7 @@ header{
   align-items: center;
   padding: 15px 200px;
   transition: 0.5s ease;
+  margin-bottom: 5rem;
 }
 
 header .brand{
