@@ -186,6 +186,7 @@ header{
     align-items: center;
     margin-top: 30px;
     color: #fff;
+    background: rgba(0,0,0, 0.9);
   }
 
   .container .contact-info {
